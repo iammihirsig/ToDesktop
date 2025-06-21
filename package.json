@@ -1,0 +1,30 @@
+{
+	"name": "todesktop",
+	"version": "1.0.0",
+	"description": "Clone of todesktop website using tailwindCSS",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npx @tailwindcss/cli -i ./src/css/index.css -o ./src/css/style.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iammihirsig/ToDesktop.git"
+	},
+	"keywords": [],
+	"author": "Mihir Raj Singh | @iammihirsig",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/iammihirsig/ToDesktop/issues"
+	},
+	"homepage": "https://github.com/iammihirsig/ToDesktop#readme",
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.10",
+		"tailwindcss": "^4.1.10"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.13"
+	}
+}
