@@ -13,9 +13,119 @@
   </head>
   <body>
     <head>
-      <nav></nav>
+      <nav class="flex items-center justify-between bg-green-100 p-3">
+        <a href="#" id="brand" class="flex items-center gap-2">
+          <img
+            class="ml-3 max-h-12 max-w-12 object-cover"
+            src="./assets/images/Logo.png"
+            alt="brand logo"
+          />
+          <span class="font-inter text-lg font-semibold">ToDesktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden gap-12 lg:flex">
+          <a href="#" class="hover:text-primary font-inter font-semibold"
+            >Pricing</a
+          >
+          <a href="#" class="hover:text-primary font-inter font-semibold"
+            >Docs</a
+          >
+          <a href="#" class="hover:text-primary font-inter font-semibold"
+            >Changelog</a
+          >
+          <a href="#" class="hover:text-primary font-inter font-semibold"
+            >Blog</a
+          >
+          <a href="#" class="hover:text-primary font-inter font-semibold"
+            >Login</a
+          >
+        </div>
+
+        <button
+          class="mr-5 hidden items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:border-gray-400 lg:flex"
+        >
+          <img
+            class="mx-0.5"
+            src="./assets/images/asset 1.svg"
+            alt="electron icon"
+          />
+          <span class="font-inter font-semibold">Electron Developer</span>
+          <i class="fa-solid fa-arrow-right text-gray-400"></i>
+        </button>
+
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+          <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <div
+          id="nav-dialog"
+          class="fixed inset-0 z-10 hidden bg-white p-3 md:hidden"
+        >
+          <div id="nav-bar" class="flex justify-between">
+            <a href="#" id="brand" class="flex items-center gap-2">
+              <img
+                class="ml-3 max-h-12 max-w-12 object-cover"
+                src="./assets/images/Logo.png"
+                alt="brand logo"
+              />
+              <span class="font-inter text-lg font-semibold">ToDesktop</span>
+            </a>
+
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+              <i class="fa-solid fa-xmark text-gray-600"></i>
+            </button>
+          </div>
+
+          <div class="m-6">
+            <a
+              href="#"
+              class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
+              >Pricing</a
+            >
+
+            <a
+              href="#"
+              class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
+              >Docs</a
+            >
+
+            <a
+              href="#"
+              class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
+              >Changelog</a
+            >
+
+            <a
+              href="#"
+              class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
+              >Blog</a
+            >
+
+            <a
+              href="#"
+              class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
+              >Login</a
+            >
+
+            <div class="h-[1px] bg-gray-200"></div>
+
+            <button
+              class="font-inter m-3 flex w-full items-center gap-2 rounded-lg p-3 font-medium hover:bg-gray-100"
+            >
+              <img
+                class="mx-0.5"
+                src="./assets/images/asset 1.svg"
+                alt="electron icon"
+              />
+              <span class="font-inter font-semibold">Electron Developer</span>
+              <i class="fa-solid fa-arrow-right text-gray-400"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
     </head>
     <main></main>
     <footer></footer>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
