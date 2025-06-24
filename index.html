@@ -59,14 +59,17 @@
           </button>
         </div>
 
+        <!-- Hamburger Menu Button -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
           <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
 
+        <!-- Hamburger Menu Interface Starts Here -->
         <div
           id="nav-dialog"
           class="fixed inset-0 z-10 hidden bg-white p-3 md:hidden"
         >
+          <!-- Brand Logo & Main Title -->
           <div id="nav-bar" class="flex justify-between">
             <a href="#" id="brand" class="flex items-center gap-2">
               <img
@@ -77,44 +80,44 @@
               <span class="font-inter text-lg font-semibold">ToDesktop</span>
             </a>
 
+            <!-- Hamburger Close Button -->
             <button class="p-2 md:hidden" onclick="handleMenu()">
               <i class="fa-solid fa-xmark text-gray-600"></i>
             </button>
           </div>
 
+          <!-- Hamburger Navigation Menu Items  -->
           <div class="m-6">
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Pricing</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Docs</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Changelog</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Blog</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Login</a
             >
 
+            <!-- Seperator -->
             <div class="h-[1px] bg-gray-200"></div>
 
+            <!-- Electron Developer Button -->
             <button
               class="font-inter m-3 flex w-full items-center gap-2 rounded-lg p-3 font-medium hover:bg-gray-100"
             >
