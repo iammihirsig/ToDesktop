@@ -12,11 +12,11 @@
     />
   </head>
   <body>
-    <head>
+    <header>
       <!-- Navigation Starts Here -->
       <nav class="flex items-center justify-between bg-white p-3">
         <!-- Brand Logo & Main Title -->
-        <a href="#" id="brand" class="flex items-center gap-2">
+        <a href="#" id="brand" class="flex flex-1 items-center gap-2">
           <img
             class="ml-3 max-h-12 max-w-12 object-cover"
             src="./assets/images/Logo.png"
@@ -26,7 +26,7 @@
         </a>
 
         <!-- Navigation Menu Items -->
-        <div id="nav-menu" class="hidden gap-12 lg:flex">
+        <div id="nav-menu" class="hidden flex-1 gap-12 lg:flex">
           <a href="#" class="hover:text-primary font-inter font-semibold"
             >Pricing</a
           >
@@ -45,17 +45,19 @@
         </div>
 
         <!-- Electron Developer Button -->
-        <button
-          class="mr-5 hidden items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:border-gray-400 lg:flex"
-        >
-          <img
-            class="mx-0.5"
-            src="./assets/images/asset 1.svg"
-            alt="electron icon"
-          />
-          <span class="font-inter font-semibold">Electron Developer</span>
-          <i class="fa-solid fa-arrow-right text-gray-400"></i>
-        </button>
+        <div class="hidden flex-1 justify-end lg:flex">
+          <button
+            class="mr-5 flex cursor-pointer items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:border-gray-400"
+          >
+            <img
+              class="mx-0.5"
+              src="./assets/images/asset 1.svg"
+              alt="electron icon"
+            />
+            <span class="font-inter font-semibold">Electron Developer</span>
+            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+          </button>
+        </div>
 
         <!-- Hamburger Menu Button -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
@@ -131,8 +133,78 @@
         </div>
       </nav>
       <!-- Navigation Ends Here -->
-    </head>
-    <main></main>
+    </header>
+
+    <main>
+      <!-- Hero Section Starts Here -->
+      <div
+        id="hero"
+        class="min-h-screen bg-gradient-to-br from-violet-50 to-amber-50"
+      >
+        <!-- Hero Container -->
+        <div
+          id="hero-container"
+          class="mx-auto flex max-w-4xl flex-col px-6 pt-6 pb-32 sm:items-center sm:pt-10 sm:text-center"
+        >
+          <!-- Latest Version Box -->
+          <div
+            id="version-text"
+            class="group my-4 flex w-fit cursor-pointer items-center gap-2 rounded-lg border border-yellow-300 bg-yellow-100 px-3 py-1 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:shadow-lg"
+          >
+            <!-- Little Dot -->
+            <div
+              class="h-2 w-2 rounded-full border border-yellow-600 bg-yellow-400"
+            ></div>
+
+            <!-- Version Text -->
+            <p class="font-semibold text-yellow-800">v0.28.0</p>
+            <i
+              class="fa-solid fa-arrow-right text-yellow-600 transition duration-300 group-hover:translate-x-1"
+            ></i>
+          </div>
+
+          <!-- Hero Features -->
+          <div id="hero-features" class="mb-4 hidden gap-8 pt-4 sm:flex">
+            <div class="flex items-center justify-center gap-2 text-gray-500">
+              <i class="fa-solid fa-file-code text-sm"></i>
+              <p>Code optional</p>
+            </div>
+
+            <div class="flex items-center justify-center gap-2 text-gray-500">
+              <i class="fa-regular fa-hand"></i>
+              <p>Drag & drop builder</p>
+            </div>
+
+            <div class="flex items-center justify-center gap-2 text-gray-500">
+              <i class="fa-solid fa-window-maximize"></i>
+              <p>Windows, Mac, Linux</p>
+            </div>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="mt-4 text-5xl font-semibold sm:w-2xl sm:text-7xl">
+            Web app to desktop app in minutes
+          </h1>
+
+          <p
+            class="mt-4 text-xl leading-8 font-light sm:mt-8 sm:w-2xl sm:text-2xl"
+          >
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+
+          <!-- Hero Buttons -->
+          <div
+            id="buttons-container"
+            class="mt-10 flex flex-col gap-4 sm:flex-row"
+          >
+            <button class="button-base button-1">Download now</button>
+            <button class="button-base button-2">Read docs</button>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section Ends Here -->
+    </main>
     <footer></footer>
     <script src="./src/js/script.js"></script>
   </body>
