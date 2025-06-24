@@ -13,7 +13,9 @@
   </head>
   <body>
     <head>
-      <nav class="flex items-center justify-between bg-green-100 p-3">
+      <!-- Navigation Starts Here -->
+      <nav class="flex items-center justify-between bg-white p-3">
+        <!-- Brand Logo & Main Title -->
         <a href="#" id="brand" class="flex items-center gap-2">
           <img
             class="ml-3 max-h-12 max-w-12 object-cover"
@@ -23,6 +25,7 @@
           <span class="font-inter text-lg font-semibold">ToDesktop</span>
         </a>
 
+        <!-- Navigation Menu Items -->
         <div id="nav-menu" class="hidden gap-12 lg:flex">
           <a href="#" class="hover:text-primary font-inter font-semibold"
             >Pricing</a
@@ -41,6 +44,7 @@
           >
         </div>
 
+        <!-- Electron Developer Button -->
         <button
           class="mr-5 hidden items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:border-gray-400 lg:flex"
         >
@@ -53,14 +57,17 @@
           <i class="fa-solid fa-arrow-right text-gray-400"></i>
         </button>
 
+        <!-- Hamburger Menu Button -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
           <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
 
+        <!-- Hamburger Menu Interface Starts Here -->
         <div
           id="nav-dialog"
           class="fixed inset-0 z-10 hidden bg-white p-3 md:hidden"
         >
+          <!-- Brand Logo & Main Title -->
           <div id="nav-bar" class="flex justify-between">
             <a href="#" id="brand" class="flex items-center gap-2">
               <img
@@ -71,44 +78,44 @@
               <span class="font-inter text-lg font-semibold">ToDesktop</span>
             </a>
 
+            <!-- Hamburger Close Button -->
             <button class="p-2 md:hidden" onclick="handleMenu()">
               <i class="fa-solid fa-xmark text-gray-600"></i>
             </button>
           </div>
 
+          <!-- Hamburger Navigation Menu Items  -->
           <div class="m-6">
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Pricing</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Docs</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Changelog</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Blog</a
             >
-
             <a
               href="#"
               class="font-inter m-3 block rounded-lg p-3 font-medium hover:bg-gray-100"
               >Login</a
             >
 
+            <!-- Seperator -->
             <div class="h-[1px] bg-gray-200"></div>
 
+            <!-- Electron Developer Button -->
             <button
               class="font-inter m-3 flex w-full items-center gap-2 rounded-lg p-3 font-medium hover:bg-gray-100"
             >
@@ -123,6 +130,7 @@
           </div>
         </div>
       </nav>
+      <!-- Navigation Ends Here -->
     </head>
     <main></main>
     <footer></footer>
