@@ -6,5 +6,25 @@
   --font-inter: "Inter", sans-serif;
 
   /* Custom Colors */
-  --color-primary: #5700f8;
+  --color-primary: #3255eb;
+}
+
+@layer base {
+  main {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .button-base {
+    @apply cursor-pointer rounded-lg px-8 py-3 font-semibold;
+  }
+
+  .button-1 {
+    @apply bg-primary text-white opacity-90 hover:opacity-100;
+  }
+
+  .button-2 {
+    @apply border border-gray-200 bg-white text-black transition hover:border-gray-400;
+  }
 }
