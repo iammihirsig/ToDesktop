@@ -137,7 +137,7 @@
 
     <main>
       <!-- Hero Section Starts Here -->
-      <div
+      <section
         id="hero"
         class="min-h-screen bg-gradient-to-b from-violet-50 to-amber-50"
       >
@@ -230,7 +230,7 @@
             <!-- Line 1 -->
             <div
               id="line1"
-              class="flex w-screen -translate-x-48 gap-4 transition-transform ease-linear"
+              class="flex w-screen -translate-x-46 gap-4 transition-transform duration-300 ease-linear"
             >
               <div
                 class="flex min-h-24 min-w-24 flex-col items-center justify-center rounded-xl border border-gray-300 bg-white md:min-h-32 md:min-w-32"
@@ -241,7 +241,7 @@
                   alt=""
                 />
                 <span class="text-[12px] font-semibold md:text-[16px]"
-                  >Unbounce</span
+                  >Zimpo</span
                 >
               </div>
 
@@ -392,7 +392,7 @@
             <!-- Line 2 -->
             <div
               id="line2"
-              class="flex w-screen -translate-x-36 gap-4 transition-transform ease-linear"
+              class="flex w-screen -translate-x-34 gap-4 transition-transform duration-300 ease-linear"
             >
               <div
                 class="flex min-h-24 min-w-24 flex-col items-center justify-center rounded-xl border border-gray-300 bg-white md:min-h-32 md:min-w-32"
@@ -554,7 +554,7 @@
             <!-- Line 3 -->
             <div
               id="line3"
-              class="flex w-screen -translate-x-24 gap-4 transition-transform ease-linear md:hidden"
+              class="flex w-screen -translate-x-52 gap-4 transition-transform duration-300 ease-linear md:hidden"
             >
               <div
                 class="flex min-h-24 min-w-24 flex-col items-center justify-center rounded-xl border border-gray-300 bg-white md:min-h-32 md:min-w-32"
@@ -714,11 +714,232 @@
             </div>
           </div>
         </div>
-        <!-- TODO: remove this bottom div -->
-        <div class="h-[1000px]"></div>
-      </div>
+      </section>
       <!-- Hero Section Ends Here -->
+
+      <!-- Steps Section Starts Here -->
+      <section
+        id="steps"
+        class="mx-auto flex flex-col gap-15 px-6 pt-24 lg:p-8"
+      >
+        <h2 class="self-start text-5xl font-semibold">How it works</h2>
+
+        <!-- Step 1 -->
+        <div
+          id="step1"
+          class="flex flex-col gap-y-15 rounded-2xl border border-zinc-200 bg-gray-50 px-6 pt-5 pb-12 lg:flex-row lg:justify-between lg:p-12"
+        >
+          <!-- Text Part -->
+          <div class="flex flex-col gap-8 lg:h-fit lg:max-w-xl">
+            <div class="step-button">Step 1</div>
+            <h2 class="text-4xl font-semibold lg:max-w-xl">
+              Bootstrap straight from your web app
+            </h2>
+            <p class="text-xl font-light">
+              Copy and paste your web app url into ToDesktop. Customise your app
+              design, app icon and window frame UI with no code.
+            </p>
+
+            <!-- Checklist -->
+            <div class="flex justify-between gap-3 md:justify-start md:gap-30">
+              <!-- Left Checklist  -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Multiple windows</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Menubar/tray menus</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Offline support</span>
+                </div>
+              </div>
+
+              <!-- Right Checklist -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Customisable menus</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Launch on startup</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Tabs (Mac only)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Part -->
+          <div class="flex justify-center p-3">
+            <img
+              src="./assets/images/asset 66.svg"
+              alt="Upload your icon svg"
+            />
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div
+          id="step2"
+          class="flex flex-col gap-y-15 rounded-2xl border border-zinc-200 bg-gray-50 px-6 pt-5 pb-12 lg:flex-row lg:justify-between lg:p-12"
+        >
+          <!-- Text Part -->
+          <div class="flex flex-col gap-8 lg:h-fit lg:max-w-xl">
+            <div class="step-button">Step 2</div>
+            <h2 class="text-4xl font-semibold lg:max-w-xl">
+              Add desktop code to customise your web app
+            </h2>
+            <p class="text-xl font-light">
+              No need to create a new repository, just add code from our desktop
+              APIs to your codebase and get access to system level
+              functionality.
+            </p>
+
+            <!-- Checklist -->
+            <div class="flex justify-between gap-3 md:justify-start md:gap-30">
+              <!-- Left Checklist  -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Native notifications</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Application menu</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Dock/Icon</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >File system access</span
+                  >
+                </div>
+              </div>
+
+              <!-- Right Checklist -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Global keyboard shortcuts</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Context menu</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Isolated browser views</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>…plus more APIs in our docs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Part -->
+          <div class="flex justify-center p-3">
+            <img
+              src="./assets/images/asset 67.png"
+              alt="Upload your icon svg"
+            />
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div
+          id="step3"
+          class="flex flex-col gap-y-15 rounded-2xl border border-zinc-200 bg-gray-50 px-6 pt-5 pb-12 lg:flex-row lg:justify-between lg:p-12"
+        >
+          <!-- Text Part -->
+          <div class="flex flex-col gap-8 lg:h-fit lg:max-w-xl">
+            <div class="step-button">Step 3</div>
+            <h2 class="text-4xl font-semibold lg:max-w-xl">Publish 🚀</h2>
+            <p class="text-xl font-light">
+              One-click will publish your desktop app to your customers and give
+              you a download link to put on your website.
+            </p>
+
+            <!-- Checklist -->
+            <div class="flex justify-between gap-3 md:justify-start md:gap-30">
+              <!-- Left Checklist  -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Super-fast global CDN</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Magic universal links</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Manage version numbers</span>
+                </div>
+              </div>
+
+              <!-- Right Checklist -->
+              <div class="flex flex-col gap-2">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span class="underline decoration-gray-400 underline-offset-4"
+                    >Download links on your domain</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Download analytics</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-check mr-2 text-neutral-500"></i>
+                  <span>Native installers for all platforms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Part -->
+          <div class="flex grow justify-center p-3">
+            <img
+              src="./assets/images/asset 68.png"
+              alt="Upload your icon svg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Steps Section Ends Here -->
     </main>
+    <!-- TODO: remove this bottom div -->
+    <div class="h-[1000px] bg-white"></div>
     <footer></footer>
     <script src="./src/js/script.js"></script>
   </body>

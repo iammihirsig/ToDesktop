@@ -6,9 +6,8 @@ function handleMenu() {
 }
 
 // Companies Lists Scroll Handler
-
-const initialTranslateLTR = -48 * 4;
-const initialTranslateRTL = 36 * 4;
+const initialTranslateLTR = 0;
+const initialTranslateRTL = 0;
 
 function setupIntersectionObserver(element, isLTR, speed) {
   const intersectionCallback = (entries) => {
@@ -43,6 +42,6 @@ const line1 = document.querySelector("#line1");
 const line2 = document.querySelector("#line2");
 const line3 = document.querySelector("#line3");
 
-setupIntersectionObserver(line1, true, 0.15);
-setupIntersectionObserver(line2, false, 0.15);
-setupIntersectionObserver(line3, true, 0.15);
+setupIntersectionObserver(line1, true, 0.2);
+setupIntersectionObserver(line2, false, 0.2);
+setupIntersectionObserver(line3, true, 0.2);
