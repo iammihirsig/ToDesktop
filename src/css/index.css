@@ -27,4 +27,8 @@
   .button-2 {
     @apply border border-gray-200 bg-white text-black transition hover:border-gray-400;
   }
+
+  .step-button {
+    @apply mt-2 w-fit rounded-lg border border-yellow-300 bg-yellow-100 px-3 py-1.5 text-sm font-semibold text-yellow-800;
+  }
 }
