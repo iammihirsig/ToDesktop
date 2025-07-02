@@ -33,7 +33,7 @@
   }
 
   .wrapper {
-    @apply mx-auto flex flex-col gap-14 px-6 pt-24;
+    @apply mx-auto flex flex-col gap-14 px-6 pt-24 lg:px-24;
   }
 
   .step-box {
