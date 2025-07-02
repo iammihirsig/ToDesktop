@@ -25,7 +25,7 @@
   }
 
   .button-2 {
-    @apply border border-gray-200 bg-white text-black transition hover:border-gray-400;
+    @apply border border-gray-300 bg-white text-black transition hover:border-gray-400;
   }
 
   .step-button {
@@ -33,7 +33,7 @@
   }
 
   .wrapper {
-    @apply mx-auto flex flex-col gap-14 px-6 pt-24;
+    @apply mx-auto flex flex-col gap-14 px-6 pt-24 lg:px-24;
   }
 
   .step-box {
