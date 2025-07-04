@@ -47,3 +47,16 @@ setupIntersectionObserver(line1, true, 0.2);
 setupIntersectionObserver(line2, false, 0.2);
 setupIntersectionObserver(line3, true, 0.2);
 setupIntersectionObserver(line4, false, 1);
+
+// FAQs Controls
+const dtElements = document.querySelectorAll("dt");
+dtElements.forEach((element) => {
+  element.addEventListener("click", () => {
+    const ddId = element.getAttribute("aria-controls");
+    const ddElement = document.getElementById(ddId);
+    const ddArrowIcon = element.querySelectorAll("i")[0];
+
+    ddElement.classList.toggle("hidden");
+    ddArrowIcon.classList.toggle("-rotate-180");
+  });
+});

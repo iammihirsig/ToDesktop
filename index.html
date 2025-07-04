@@ -230,7 +230,7 @@
             <!-- Line 1 -->
             <div
               id="line1"
-              class="flex w-screen -translate-x-200 gap-4 transition-transform duration-600 ease-out"
+              class="flex w-screen -translate-x-90 gap-4 transition-transform duration-600 ease-out"
             >
               <div
                 class="flex min-h-24 min-w-24 flex-col items-center justify-center rounded-xl border border-gray-300 bg-white md:min-h-32 md:min-w-32"
@@ -548,7 +548,7 @@
             <!-- Line 2 -->
             <div
               id="line2"
-              class="flex w-screen -translate-x-196 gap-4 transition-transform duration-600 ease-out"
+              class="flex w-screen -translate-x-32 gap-4 transition-transform duration-600 ease-out"
             >
               <div
                 class="flex min-h-24 min-w-24 flex-col items-center justify-center rounded-xl border border-gray-300 bg-white md:min-h-32 md:min-w-32"
@@ -1864,8 +1864,401 @@
         </div>
       </section>
       <!-- Enterprice Section Ends Here -->
+
+      <!-- FAQ Section Starts Here -->
+      <section class="wrapper">
+        <h2 class="self-start text-[45px] leading-14 font-semibold">FAQs</h2>
+        <!-- FAQs List -->
+        <div class="mt-6 space-y-4 md:columns-2">
+          <!-- Container 1 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq1"
+              >
+                <p class="max-w-xs lg:max-w-lg">Is ToDesktop For Me?</p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq1" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  That depends! If you would like to distribute your web app to
+                  your users as a downloadable desktop app then ToDesktop is for
+                  you.
+                </p>
+                <p class="my-5.5">
+                  If you want to make a desktop app of a website for your
+                  personal use, ToDesktop is overkill.
+                </p>
+                <p class="my-5.5">
+                  What’s the difference? There are extra considerations when
+                  creating a desktop app for distribution to customers. Here are
+                  the top 3:
+                </p>
+                <ul class="list-disc pl-4">
+                  <li class="my-2.5">
+                    <span class="font-bold">Installer —</span> Mac users expect
+                    a “drag to applications” DMG file. Windows users expect an
+                    installer and they also expect to be able to uninstall it
+                    from the control panel.
+                  </li>
+                  <li class="my-2.5">
+                    <span class="font-bold">Code Signing —</span> By default
+                    Windows Authenticode and Apple Gatekeeper will stop your
+                    desktop app opening.Signing your code allows your app to
+                    open without issues.
+                  </li>
+                  <li class="my-2.5">
+                    <span class="font-bold">Auto-update —</span> There is a web
+                    browser running “underneath” your desktop app. It’s
+                    important to keep this updated for two reasons.
+
+                    <ol class="list-decimal pl-6">
+                      <li class="my-2.5">
+                        Security issues + vulnerabilities can occur. Auto-update
+                        ensures that they stay patched over time.
+                      </li>
+                      <li class="my-2.5">
+                        You don’t want to be stuck supporting an old web browser
+                        in 5 years from now. This can happen if your desktop
+                        app’s underlying web browser hasn’t updated.
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+                <p>
+                  ToDesktop offers these features as standard! Saving you a ton
+                  of development time and effort.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 2 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq2"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  Can I try ToDesktop without buying?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq2" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  Yes. You can get started by downloading ToDesktop Builder at
+                  no cost. After installing it, you can build your desktop
+                  application and preview it by clicking the “Run” button. This
+                  allows you to test the app on your own computer to ensure it
+                  performs to your expectations.
+                </p>
+
+                <p class="my-5.5">
+                  If you’re using a Mac and wish to add the app to your
+                  “Applications” folder for easier access, simply follow these
+                  steps:
+                </p>
+                <ol class="list-decimal pl-6">
+                  <li class="my-2.5">
+                    Right-click on the app’s dock icon while it’s running.
+                  </li>
+                  <li class="my-2.5">
+                    Select “Options” and then “Show in Finder.”
+                  </li>
+                  <li class="my-2.5">
+                    YDrag the application into your Applications directory,
+                    allowing you to use it just like any other installed app.
+                  </li>
+                </ol>
+                <p>
+                  Should you decide to distribute your application to a wider
+                  audience—complete with code signing and a native
+                  installer—you’ll need to purchase a subscription.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 3 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer break-inside-avoid items-center justify-between text-lg font-semibold"
+                aria-controls="faq3"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  Do you collect or store data about my customers?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq3" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  No. When a ToDesktop app opens it contacts the our servers to
+                  check if an update is available. We do not collect or store
+                  any user data from these requests.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 4 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer break-inside-avoid items-center justify-between text-lg font-semibold"
+                aria-controls="faq4"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  Does ToDesktop work with sites built with ___?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq4" class="mt-4 hidden pr-12 text-lg font-light">
+                <ul class="list-disc pl-4">
+                  <li class="my-2.5">Wordpress? Yes.</li>
+                  <li class="my-2.5">Squarespace? Yup.</li>
+                  <li class="my-2.5">Wix? Of course.</li>
+                  <li class="my-2.5">Shopify? Definitely.</li>
+                  <li class="my-2.5">React? You bet.</li>
+                  <li class="my-2.5">Vue? Affirmative.</li>
+                  <li class="my-2.5">PHP? 100%.</li>
+                  <li class="my-2.5">Go? Absolutely.</li>
+                </ul>
+                <p class="mb-5.5">
+                  If you’re noticing a trend here, that’s because ToDesktop
+                  works with sites built with any technology stack.
+                </p>
+                <p>
+                  If it works in your browser it will work as a ToDesktop app.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 5 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer break-inside-avoid items-center justify-between text-lg font-semibold"
+                aria-controls="faq5"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  What features are on the product roadmap?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq5" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  If you have any suggestions, we’d love to hear! Please send us
+                  an email at support@todesktop.com or send us a message
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 6 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq6"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  How does ToDesktop work under the hood?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq6" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  It can help to think of ToDesktop as a custom web browser
+                  dedicated to your web app or website. It shows a live version
+                  of your site or web app at all times, just like a web browser.
+                  There is no toolbar or address bar or refresh buttons but it
+                  behaves and functions just like a web browser. This means you
+                  don’t need to do anything to your existing site, it will just
+                  work. If your site works in Google Chrome then it is
+                  compatible with ToDesktop.
+                </p>
+                <p class="mb-5.5">
+                  ToDesktop uses a technology called Electron. You don’t need
+                  Electron (or even coding) experience to create a desktop app
+                  with ToDesktop. Rest assured, the underlying “browser” engine
+                  is updated regularly through auto-updates. So the desktop
+                  version of your app will always have the latest web features
+                  available.
+                </p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 7 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq7"
+              >
+                <p class="max-w-xs lg:max-w-lg">Will my app work offline?</p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq7" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  Think of ToDesktop as a normal browser that is just for your
+                  website. Your website will work exactly as it does in Chrome,
+                  or any other browser.
+                </p>
+                <p class="my-5.5">
+                  If you want to make the app work offline you’ll need to make
+                  it into a progressive web app. Include a web manifest, service
+                  workers and client-side storage and voila — offline support.
+                </p>
+                <p>Learn more on MDN.</p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 8 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq8"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  Which version of Electron/Chromium is used?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq8" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  ToDesktop is currently based on Chromium 118 and Electron 27.
+                  When Electron releases a new version you can expect us to
+                  update it shortly after. We prioritize security fixes and
+                  endeavour to release them as soon as possible. All updates are
+                  pushed out to all your users over auto-update.
+                </p>
+                <p>You can learn more about this here.</p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 9 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq9"
+              >
+                <p class="max-w-xs lg:max-w-lg">What support do you offer?</p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq9" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  We’ll do our best to help you with any issue you encounter
+                  with ToDesktop. You can get in touch with us via email and
+                  chat.
+                </p>
+                <p class="my-5.5">
+                  On the Startup plan we deal with the same day or the next day.
+                </p>
+                <p class="my-5.5">
+                  On the Business plan you get concierge onboarding. This is a
+                  video/phoneonboarding session where we take you through the
+                  product and make sure you’re happy set up. You also get
+                  priority support with your issues answered first. You can also
+                  schedule a phone/video support session if necessary.
+                </p>
+                <p>You can email us at support@todesktop.com or chat with us</p>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 10 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq10"
+              >
+                <p class="max-w-xs lg:max-w-lg">How does my app get updated?</p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq10" class="mt-4 hidden pr-12 text-lg font-light">
+                <p class="mb-5.5">
+                  Every time your app launches it contacts the ToDesktop update
+                  server. If there is a newer version available then it gets
+                  downloaded automatically. The user gets a notification that
+                  the new version will be installed the next time that they open
+                  the app.
+                </p>
+                <p class="my-5.5">
+                  Auto-updates are published on two occasions:
+                </p>
+                <ul class="list-disc pl-4">
+                  <li class="my-2.5">
+                    An app detail (name, icon, default window dimensions) is
+                    changed.
+                  </li>
+                  <li class="my-2.5">
+                    Electron or the ToDesktop standard library is updated.
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <!-- Container 11 -->
+          <div
+            class="break-inside-avoid rounded-2xl border border-gray-300 bg-gray-50 p-6"
+          >
+            <dl class="pl-2">
+              <dt
+                class="flex cursor-pointer items-center justify-between text-lg font-semibold"
+                aria-controls="faq11"
+              >
+                <p class="max-w-xs lg:max-w-lg">
+                  I want to use ToDesktop to convert multiple web apps, is there
+                  a bulk discount available?
+                </p>
+                <i class="fa-solid fa-chevron-up -rotate-180 transition"></i>
+              </dt>
+              <dd id="faq11" class="mt-4 hidden pr-12 text-lg font-light">
+                <p>
+                  Yes, let us know your needs. Please send us an email at
+                  support@todesktop.com or send us a message
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <p class="max-w-[400px] text-lg text-gray-500 lg:max-w-lg">
+          More questions? Visit our
+          <span
+            class="cursor-pointer border-b border-dotted border-gray-300 text-gray-800"
+            >docs.</span
+          >
+          Or
+          <span
+            class="cursor-pointer border-b border-dotted border-gray-300 text-gray-800"
+            >send us a message.</span
+          >
+        </p>
+      </section>
+      <!-- FAQ Section Ends Here -->
     </main>
-    <!-- TODO: remove this bottom div -->
+    <!-- TODO: remove this bottom div after before adding footer -->
     <div class="h-[1000px] bg-white"></div>
     <footer></footer>
     <script src="./src/js/script.js"></script>
