@@ -106,6 +106,10 @@ TODESKTOP/
 
 You can simply open the `index.html` file in a browser or use Live Server.
 
+> [!IMPORTANT]
+> make sure to do `npm install` from root directory to install all dependencies.
+
+
 ```bash
 # Clone the repository
 git clone https://github.com/iammihirsig/ToDesktop.git
